@@ -1,0 +1,3 @@
+#!/bin/bash
+npm install -g less@1.3.3
+ln -s /usr/local/share/npm/bin/lessc /usr/local/bin/lessc

@@ -1,0 +1,15 @@
+#!/bin/sh
+brew cask install adium
+brew cask install firefox
+brew cask install google-chrome
+brew cask install phpstorm
+brew cask install sequel-pro
+brew cask install silverlight
+brew cask install unrarx
+brew cask install xquartz
+brew cask install textmate
+brew cask install flash
+brew cask install logitech-control-center
+brew cask install logitech-unifying-software
+brew cask install hipchat
+brew cask install launchrocket

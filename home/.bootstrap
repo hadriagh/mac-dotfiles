@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo -s -- 'echo "%admin  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers'
+./.homebrew
+./.npmpackages
+php ./.dev-configs/install.php

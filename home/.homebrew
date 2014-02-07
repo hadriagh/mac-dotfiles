@@ -1,0 +1,32 @@
+#!/bin/bash
+if [ ! -f /usr/local/bin/brew ]; 
+then 
+	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
+
+sudo chown -R $USER:staff `brew --prefix`
+
+
+brew tap homebrew/dupes
+brew tap phinze/homebrew-cask
+brew tap jimbojsb/php
+brew tap jimbojsb/launchrocket
+
+brew install git
+brew install bash-completion
+brew install nginx
+brew install redis
+brew install beanstalkd
+brew install mysql
+brew install wget
+brew install watch
+brew install dnsmasq
+brew install brew-cask
+brew install nodejs
+brew install hub
+
+./.brewcask
+
+# depends xquartz
+brew install php
+
