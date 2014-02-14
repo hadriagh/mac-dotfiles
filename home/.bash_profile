@@ -28,8 +28,8 @@ function gnb {
 PS1='[\u@\h \w\[\033[32m\]$(__git_ps1)\[\033[0m\]]$ '
 PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-export DOMAIN=jb.dev
-export EDITOR="mate -w"
+export DOMAIN=dave.dev
+export EDITOR="nano"
 export APPLICATION_ENV=development
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~} $(__git_ps1 " (%s)")"; echo -ne "\007"'

@@ -24,6 +24,8 @@ brew install dnsmasq
 brew install brew-cask
 brew install nodejs
 brew install hub
+brew install optipng
+brew install --mysql --id64 sphinx
 
 ./.brewcask
 
