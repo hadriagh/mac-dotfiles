@@ -13,3 +13,8 @@ brew cask install logitech-control-center
 brew cask install logitech-unifying
 brew cask install hipchat
 brew cask install launchrocket
+brew cask install skype
+brew cask install amazon-cloud-player
+brew cask install vlc
+brew cask install sublime-text
+brew cask install rubymine

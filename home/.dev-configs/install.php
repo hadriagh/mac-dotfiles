@@ -40,19 +40,7 @@ function install_nginx() {
 	file_put_contents($destinationFile, $conf);
 }
 
-function install_ipfw() {
-	$destinationFile = "/Library/LaunchDaemons/ipfw.plist";
-	$localfile = file_get_contents(__DIR__ . '/ipfw.plist');
-	$user = get_current_user();
-	$localfile = str_replace('|USER|', $user, $localfile);
-	file_put_contents('/tmp/ipfw.plist', $localfile);
-	exec('sudo cp /tmp/ipfw.plist ' . $destinationFile);
-	exec('sudo chmod 644 ' . $destinationFile);
-	unlink('/tmp/ipfw.plist');
-}
-
 
 install_dnsmasq();
 install_phpfpm();
 install_nginx();
-install_ipfw();
