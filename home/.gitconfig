@@ -1,9 +1,31 @@
 [user]
-	name = Josh Butts
-	email = josh@joshbutts.com
+	email = hadriagh@gmail.com
+	name = David Moore
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+
+[color "status"]
+        added = green
+        changed = yellow
+        untracked = red
+
 [core]
-	editor = mate -w
-[hub]
-	protocol = https
-[merge]
-	autoedit = no
+        pager = less -FRSX
+        whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[alias]
+        ci = commit
+        co = checkout 
+
